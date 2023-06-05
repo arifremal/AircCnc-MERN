@@ -4,6 +4,7 @@ import { useCallback, useContext, useState } from 'react'
 // import { AuthContext } from '../../../providers/AuthProvider'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../providers/AuthProvider'
+import Avatar from '../../Shared/NavBar/Avatar'
 
 const MenuDropdown = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -23,7 +24,7 @@ const MenuDropdown = () => {
         >
           <AiOutlineMenu />
           <div className='hidden md:block'>
-            {/* <Avatar /> */}
+            <Avatar></Avatar>
           </div>
         </div>
       </div>
